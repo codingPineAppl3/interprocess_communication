@@ -13,8 +13,8 @@ public class Player2 {
         String name = ManagementFactory.getRuntimeMXBean().getName();
         System.out.println("PID: " + name.split("@")[0]);
         int counter = 0;
-        RandomAccessFile rd = new RandomAccessFile("C:/xiaominjin/mapped.txt", "rw");
-        RandomAccessFile rd2 = new RandomAccessFile("C:/xiaominjin/mapped2.txt", "rw");
+        RandomAccessFile rd = new RandomAccessFile("C:/temp/mapped.txt", "rw");
+        RandomAccessFile rd2 = new RandomAccessFile("C:/temp/mapped2.txt", "rw");
         FileChannel fc = rd.getChannel();
         FileChannel fc2 = rd2.getChannel();
         MappedByteBuffer mem = fc.map(FileChannel.MapMode.READ_WRITE, 0, 4000);

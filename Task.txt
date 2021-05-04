@@ -11,7 +11,7 @@ The use case for this task is as bellow:
 
 4. finalize the program (gracefully) after the initiator sent 10 messages and received back 10 messages (stop condition)
 
-5. both players should run in the same java process (strong requirement)
+5. both players should run in the same java process 
 
 6. document for every class the responsibilities it has.
 
